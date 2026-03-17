@@ -679,7 +679,11 @@ function FooterSection() {
                   hello@asailabs.com
                 </Link>
               </p>
-              <p>Support: support@asailabs.com</p>
+              <p>Support:{' '}
+                <Link href="mailto:hello@asailabs.com" className="underline underline-offset-2">
+                  support@asailabs.com
+                </Link>
+              </p>
             </address>
           </div>
 
