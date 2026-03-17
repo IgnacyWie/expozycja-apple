@@ -70,7 +70,9 @@ export function Features() {
                   <h2 className="text-lg font-medium transition dark:text-white">
                     Privacy by Design<sup className="ml-1 text-xs text-muted-foreground">2</sup>
                   </h2>
-                  <p className="text-sm text-muted-foreground">We see the bread, never the customers. Face-blurring is native.</p>
+                  <p className="text-sm text-muted-foreground">
+                    Sees the bread, ignores the rest. Native face-blurring and zero customer data storage. Built for precise inventory, designed for absolute privacy.
+                  </p>
                 </div>
               </CardContent>
             </Card>
