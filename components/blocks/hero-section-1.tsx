@@ -622,7 +622,7 @@ const HeroHeader = ({ onGetStartedClick }: { onGetStartedClick?: () => void }) =
 function FooterSection() {
   return (
     <footer className="border-t border-zinc-800 bg-zinc-950 text-zinc-50">
-      <div className="mx-auto max-w-7xl px-6 py-14 md:py-16">
+      <div className="mx-auto max-w-6xl px-6 py-14 md:py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="relative">
             <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-3xl">Perfect your bake.</h2>
