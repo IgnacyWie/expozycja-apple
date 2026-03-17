@@ -433,6 +433,10 @@ const logos = [
     alt: "Goraco Polecam",
   },
   {
+    src: "/jush.png",
+    alt: "Zabka Jush",
+  },
+  {
     src: "/enata.png",
     alt: "Enata Bread",
   },
@@ -441,8 +445,8 @@ const logos = [
     alt: "The Bakery",
   },
   {
-    src: "/jush.png",
-    alt: "Zabka Jush",
+    src: "/szalata.png",
+    alt: "Szalata i szok",
   },
 ]
 
