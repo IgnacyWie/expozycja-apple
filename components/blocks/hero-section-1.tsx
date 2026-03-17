@@ -183,7 +183,7 @@ export function HeroSection() {
             <div className="mt-5 h-px bg-border [mask-image:linear-gradient(to_right,transparent,black,transparent)]" />
           </div>
         </section>
-        <section id="how-it-works" className="scroll-mt-24 bg-background pb-16 pt-16 md:pb-32">
+        <section className="scroll-mt-24 bg-background pb-16 pt-16 md:pb-32">
           <div className="relative mx-auto max-w-7xl px-6">
             <div className="text-center h-[50vh] pb-32 flex flex-col justify-center">
               <h2 className="mb-4 md:mb-6 text-2xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight">
@@ -191,7 +191,7 @@ export function HeroSection() {
                 <br />
                 Stop letting missed sales cut into your margins.
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground font-medium">
+              <p id="how-it-works" className="text-lg md:text-xl text-muted-foreground font-medium">
                 We have the solution for you.
               </p>
             </div>
