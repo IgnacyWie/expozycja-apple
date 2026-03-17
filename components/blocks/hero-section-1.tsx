@@ -105,11 +105,11 @@ export function HeroSection() {
                 <AnimatedGroup variants={transitionVariants}>
                   <h1
                     className="mt-8 max-w-4xl mx-auto text-balance font-semibold text-7xl md:text-8xl lg:mt-16 xl:text-[6rem]">
-                    Flawless inventory. Zero manual counting.
+                    Master the bake. Automate the rest.
                   </h1>
                   <p
                     className="mx-auto mt-8 max-w-2xl text-balance text-lg">
-                    The intelligent counter recognition system for modern bakeries. Know exactly what’s on your shelves in real-time, without lifting a finger.
+                    Transform your display into data. Real-time counter recognition designed for high-volume bakeries.
                   </p>
                 </AnimatedGroup>
 
