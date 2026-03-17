@@ -461,7 +461,7 @@ const HOW_IT_WORKS_TIMELINE: TimelineEntry[] = [
 const menuItems = [
   { name: 'Home', href: '#home' },
   { name: 'How it works', href: '#how-it-works' },
-  { name: 'Savings', href: '#savings' },
+  { name: 'Features', href: '#savings' },
   { name: 'FAQ', href: '#faq' },
 ]
 
