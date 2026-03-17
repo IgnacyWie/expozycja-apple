@@ -1,5 +1,6 @@
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 type Logo = {
   src?: string;
@@ -7,6 +8,7 @@ type Logo = {
   width?: number;
   height?: number;
   text?: string;
+  href: string;
   className?: string;
 };
 
@@ -53,18 +55,20 @@ export function LogoCloud({ className, logos, ...props }: LogoCloudProps) {
           }
 
           return (
-            <img
-              alt={logo.alt}
-              className={cn(
-                "pointer-events-none h-12 select-none md:h-12 lg:h-12 dark:brightness-0 dark:invert",
-                logo.className,
-              )}
-              height={logo.height || "auto"}
-              key={`logo-${logo.alt}-${index}`}
-              loading="lazy"
-              src={logo.src!}
-              width={logo.width || "auto"}
-            />
+            <Link href={logo.href ?? "#"} asChild>
+              <img
+                alt={logo.alt}
+                className={cn(
+                  "pointer-events-none h-12 select-none md:h-12 lg:h-12 dark:brightness-0 dark:invert",
+                  logo.className,
+                )}
+                height={logo.height || "auto"}
+                key={`logo-${logo.alt}-${index}`}
+                loading="lazy"
+                src={logo.src!}
+                width={logo.width || "auto"}
+              />
+            </Link>
           );
         })}
       </InfiniteSlider>

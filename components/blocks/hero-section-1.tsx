@@ -434,22 +434,27 @@ const logos = [
   {
     src: "/goraco.png",
     alt: "Goraco Polecam",
+    href: "https://goraco-polecam.pl/"
   },
   {
     src: "/jush.png",
     alt: "Zabka Jush",
+    href: "https://jush.pl/"
   },
   {
     src: "/enata.png",
     alt: "Enata Bread",
+    href: "https://enatabread.pl/"
   },
   {
     src: "/bakery.png",
     alt: "The Bakery",
+    href: "https://www.instagram.com/thebakerywarszawa/"
   },
   {
     src: "/szalata.png",
     alt: "Szalata i szok",
+    href: "https://www.instagram.com/szalata_i_szok/"
   },
 ]
 
