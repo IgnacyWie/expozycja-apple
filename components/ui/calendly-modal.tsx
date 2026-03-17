@@ -6,7 +6,7 @@ import { X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const CALENDLY_URL =
-  "https://calendly.com/santiago-blarai/30min?hide_gdpr_banner=1&primary_color=6b6b6b"
+  "https://calendly.com/mati-asailabs/30min?hide_gdpr_banner=1&primary_color=6b6b6b"
 
 interface CalendlyModalProps {
   open: boolean
@@ -25,7 +25,7 @@ export function CalendlyModal({
       script.src = "https://assets.calendly.com/assets/external/widget.js"
       script.async = true
       document.body.appendChild(script)
-      ;(window as unknown as { __calendlyScriptLoaded?: boolean }).__calendlyScriptLoaded = true
+        ; (window as unknown as { __calendlyScriptLoaded?: boolean }).__calendlyScriptLoaded = true
     }
   }, [open])
 

@@ -1,4 +1,4 @@
-# Website Mantai
+# Exponata AI
 
 A modern Next.js website with a beautiful hero section built with shadcn/ui, Tailwind CSS, and TypeScript.
 
@@ -21,11 +21,13 @@ A modern Next.js website with a beautiful hero section built with shadcn/ui, Tai
 ### Installation
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
 
 2. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -56,6 +58,7 @@ websitemantai/
 ### Hero Section
 
 The hero section includes:
+
 - Animated header with navigation
 - Hero content with call-to-action buttons
 - Customer logos section

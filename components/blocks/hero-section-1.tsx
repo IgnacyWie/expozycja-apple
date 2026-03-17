@@ -51,20 +51,10 @@ const HERO_DASHBOARD_IMAGES: Record<string, { src: string; alt: string }> = {
 export function HeroSection() {
   const [calendlyOpen, setCalendlyOpen] = React.useState(false)
   const [heroDashboardTab, setHeroDashboardTab] = React.useState('main')
-  const [comingSoonOpen, setComingSoonOpen] = React.useState(false)
   return (
     <>
       <CalendlyModal open={calendlyOpen} onOpenChange={setCalendlyOpen} />
-      {comingSoonOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setComingSoonOpen(false)} aria-hidden />
-          <div className="relative z-10 rounded-2xl border bg-background px-8 py-10 text-center shadow-xl">
-            <p className="text-xl font-semibold text-foreground">Coming soon</p>
-            <Button className="mt-6" size="sm" onClick={() => setComingSoonOpen(false)}>OK</Button>
-          </div>
-        </div>
-      )}
-      <HeroHeader onGetStartedClick={() => setComingSoonOpen(true)} />
+      <HeroHeader onGetStartedClick={() => setCalendlyOpen(true)} />
       <main className="overflow-x-hidden">
         <div
           aria-hidden
@@ -246,7 +236,7 @@ export function HeroSection() {
           </div>
         </section>
         <CompanySavingsSection />
-        <FomoCtaSection onGetStartedClick={() => setComingSoonOpen(true)} />
+        <FomoCtaSection onGetStartedClick={() => setCalendlyOpen(true)} />
         <FaqSection onBookCallClick={() => setCalendlyOpen(true)} />
         <FooterSection />
       </main >
@@ -673,12 +663,10 @@ const HeroHeader = ({ onGetStartedClick }: { onGetStartedClick?: () => void }) =
                   className={cn(isScrolled && 'lg:hidden')}>
                 </Button>
                 <Button
-                  asChild
                   size="sm"
-                  className={cn(isScrolled && 'lg:hidden')}>
-                  <Link href="/animated-login?mode=signup">
-                    <span>Get Started</span>
-                  </Link>
+                  className={cn(isScrolled && 'lg:hidden')}
+                  onClick={onGetStartedClick}>
+                  <span>Get Started</span>
                 </Button>
                 <Button
                   size="sm"

@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Website Mantai",
+  title: "Exponata AI",
   description: "Modern Solutions for Customer Engagement",
 };
 
