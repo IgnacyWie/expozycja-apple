@@ -55,6 +55,7 @@ export function HeroSection() {
     <>
       <CalendlyModal open={calendlyOpen} onOpenChange={setCalendlyOpen} />
       <HeroHeader onGetStartedClick={() => setCalendlyOpen(true)} />
+
       <main className="overflow-x-hidden">
         <div
           aria-hidden
@@ -103,6 +104,16 @@ export function HeroSection() {
             <div className="mx-auto max-w-7xl px-6">
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                 <AnimatedGroup variants={transitionVariants}>
+                  <div className="bg-muted group mx-auto flex w-fit items-center gap-2 rounded-full border px-4 shadow-md shadow-black/5 transition-all duration-300 dark:border-t-white/5 dark:shadow-zinc-950">
+                    <span className="text-foreground font-medium">
+                      Made in Europe
+                    </span>
+
+                    <span className="text-foreground text-2xl font-medium">
+                      🇪🇺
+                    </span>
+
+                  </div>
                   <h1
                     className="mt-8 max-w-4xl mx-auto text-balance font-semibold text-7xl md:text-8xl lg:mt-16 xl:text-[6rem]">
                     Master the bake. Automate the rest.
