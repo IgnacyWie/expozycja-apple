@@ -523,10 +523,10 @@ const HeroHeader = ({ onGetStartedClick }: { onGetStartedClick?: () => void }) =
                             damping: 30,
                           }}
                         >
-                          <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-t-full">
-                            <div className="absolute -left-2 -top-2 h-6 w-12 rounded-full bg-primary/20 blur-md" />
-                            <div className="absolute -top-1 h-6 w-8 rounded-full bg-primary/20 blur-md" />
-                            <div className="absolute left-2 top-0 h-4 w-4 rounded-full bg-primary/20 blur-sm" />
+                          <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-8 h-1 rounded-t-full">
+                            <div className="absolute -left-2 -top-2 h-6 w-12 rounded-full bg-primary/10 blur-lg" />
+                            <div className="absolute -top-2 h-4 w-12 rounded-full bg-primary/5 blur-xl" />
+                            <div className="absolute left-2 top-0 h-4 w-4 rounded-full bg-primary/10 blur-md" />
                           </div>
                         </motion.div>
                       )}
