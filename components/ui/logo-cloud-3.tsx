@@ -55,7 +55,7 @@ export function LogoCloud({ className, logos, ...props }: LogoCloudProps) {
           }
 
           return (
-            <Link href={logo.href ?? "#"} asChild key={`logo-${logo.alt}-${index}`} >
+            <Link href={logo.href ?? "#"} key={`logo-${logo.alt}-${index}`} >
               <img
                 alt={logo.alt}
                 className={cn(
