@@ -17,17 +17,8 @@ type LogoCloudProps = React.ComponentProps<"div"> & {
 };
 
 export function LogoCloud({ className, logos, ...props }: LogoCloudProps) {
-  // Repeat the provided logos so the marquee has enough content to animate smoothly
-  const minimumLogos = 6;
-  const repeatedLogos =
-    logos.length >= minimumLogos || logos.length === 0
-      ? logos
-      : Array.from(
-        { length: Math.ceil(minimumLogos / logos.length) },
-        () => logos
-      )
-        .flat()
-        .slice(0, minimumLogos);
+  // Use the provided order; InfiniteSlider already renders two copies for seamless looping
+  const repeatedLogos = logos;
 
   return (
     <div
