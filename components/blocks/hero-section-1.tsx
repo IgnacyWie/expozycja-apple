@@ -170,7 +170,10 @@ export function HeroSection() {
         <section className="bg-background pb-16 pt-16 md:pb-32">
           <div className="relative mx-auto max-w-3xl px-6">
             <h2 className="mb-5 text-center font-medium text-foreground text-xl tracking-tight md:text-3xl">
-              <span className="">Used by the leaders.</span>
+              <div className="flex flex-col space-y-2">
+                <span className="">Trusted by experts.</span>
+                <span className="text-muted-foreground text-lg">Used by the leaders.</span>
+              </div>
             </h2>
             <div className="mx-auto my-5 h-px max-w-sm bg-border [mask-image:linear-gradient(to_right,transparent,black,transparent)]" />
 
