@@ -15,7 +15,7 @@ export function Features() {
               <CardContent className="relative m-auto size-fit pt-6">
                 <div className="relative flex h-24 w-56 items-center">
                   <svg
-                    className="text-muted absolute inset-0 size-full"
+                    className="text-blue-500 absolute inset-0 size-full"
                     viewBox="0 0 254 104"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"

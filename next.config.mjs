@@ -18,6 +18,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'html.tailus.io',
       },
+      {
+        protocol: 'https',
+        hostname: 'assets.aceternity.com',
+      },
     ],
   },
 };
