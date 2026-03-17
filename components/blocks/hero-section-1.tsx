@@ -184,7 +184,7 @@ export function HeroSection() {
         </section>
         <section id="how-it-works" className="scroll-mt-24 bg-background pb-16 pt-16 md:pb-32">
           <div className="relative mx-auto max-w-7xl px-6">
-            <div className="mb-12 md:mb-16 text-center">
+            <div className="text-center h-[50vh] pb-32 flex flex-col justify-center">
               <h2 className="mb-4 md:mb-6 text-2xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight">
                 Tired of empty display cases?
                 <br />
@@ -194,7 +194,7 @@ export function HeroSection() {
                 We have the solution for you.
               </p>
             </div>
-            <h3 className="mb-8 md:mb-12 text-center font-medium text-foreground text-xl tracking-tight md:text-3xl">
+            <h3 className="mb-8 md:mb-0 text-center font-medium text-foreground text-4xl tracking-tight md:text-6xl">
               <span className="font-semibold">How It Works</span>
             </h3>
             <Timeline data={HOW_IT_WORKS_TIMELINE} />
