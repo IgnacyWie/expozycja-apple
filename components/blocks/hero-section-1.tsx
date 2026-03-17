@@ -1,9 +1,8 @@
 'use client'
 
-import { LineChart } from 'lucide-react';
 import React from 'react'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, Menu, X, Mic, Car, Brain, LayoutDashboard, TrendingDown, Shield, Gauge, ChevronDown, Instagram, Linkedin, Send } from 'lucide-react'
+import { ArrowRight, ArrowLeft, Menu, X, Mic, Car, Brain, LayoutDashboard, ChevronDown, Instagram, Linkedin, Send } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { AnimatedGroup } from '@/components/ui/animated-group'
@@ -15,6 +14,7 @@ import { TextRevealByWord } from '@/components/ui/text-reveal-by-word'
 import { Timeline, type TimelineEntry } from '@/components/ui/timeline'
 import { CalendlyModal } from '@/components/ui/calendly-modal'
 import { Tooltip } from '@/components/ui/tooltip'
+import { Features } from '@/components/ui/features-8'
 import { cn } from '@/lib/utils'
 
 const transitionVariants = {
@@ -235,72 +235,12 @@ export function HeroSection() {
             <Timeline data={HOW_IT_WORKS_TIMELINE} />
           </div>
         </section>
-        <CompanySavingsSection />
+        <Features />
         <FomoCtaSection onGetStartedClick={() => setCalendlyOpen(true)} />
         <FaqSection onBookCallClick={() => setCalendlyOpen(true)} />
         <FooterSection />
       </main >
     </>
-  )
-}
-
-export function CompanySavingsSection() {
-  return (
-    <section id="savings" className="scroll-mt-24 bg-gray-50 py-16 md:py-32 dark:bg-transparent">
-      <div className="mx-auto max-w-3xl lg:max-w-5xl px-6">
-        <div className="mb-10 md:mb-14 text-center">
-          <h2 className="text-2xl md:text-4xl font-bold text-foreground tracking-tight">
-            Maximize margins. Minimize waste.
-          </h2>
-          <p className="mt-4 text-base md:text-lg text-muted-foreground">
-            Automate your inventory tracking, prevent costly stockouts, and eliminate the guesswork from your daily baking schedule.
-          </p>
-        </div>
-        <div className="relative">
-          <div className="relative z-10 grid grid-cols-6 gap-3">
-            <Card className="relative col-span-full overflow-hidden lg:col-span-2">
-              <CardContent className="pt-6">
-                <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
-                  <TrendingDown className="m-auto size-5" strokeWidth={1} />
-                </div>
-                <div className="relative z-10 mt-6 space-y-2">
-                  <h3 className="text-lg font-medium transition dark:text-white">Reduce end-of-day waste</h3>
-                  <p className="text-foreground">
-                    Optimize your production using precise sales velocity data. Stop over-baking and protect your bottom line from surplus inventory.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
-              <CardContent className="pt-6">
-                <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
-                  <Gauge className="m-auto size-5" strokeWidth={1} />
-                </div>
-                <div className="relative z-10 mt-6 space-y-2">
-                  <h3 className="text-lg font-medium transition dark:text-white">Real-time stock alerts</h3>
-                  <p className="text-foreground">
-                    Never miss a sale due to an empty display. Monitor fill ratios instantly and restock high-margin artisan goods exactly when needed.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
-              <CardContent className="pt-6">
-                <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
-                  <LineChart className="m-auto size-5" strokeWidth={1} />
-                </div>
-                <div className="relative z-10 mt-6 space-y-2">
-                  <h3 className="text-lg font-medium transition dark:text-white">Zero manual counting</h3>
-                  <p className="text-foreground">
-                    Free your staff from tedious inventory checks. Transform quick visual captures into highly accurate, automated reporting.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </div>
-    </section>
   )
 }
 
