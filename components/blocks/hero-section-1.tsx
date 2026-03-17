@@ -721,7 +721,7 @@ function FooterSection() {
 const Logo = ({ className }: { className?: string }) => {
   return (
     <span className={cn('text-lg font-semibold tracking-tight', className)}>
-      <img className="h-8"
+      <img className="h-6"
         src="/logo.png"
       />
     </span>
