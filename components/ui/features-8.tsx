@@ -75,7 +75,7 @@ export function Features() {
                 <div className="relative z-10 flex flex-col justify-between space-y-8">
                   <div className="space-y-2">
                     <h2 className="text-lg font-medium text-zinc-800 transition dark:text-white">
-                      Fleet Oversight
+                      Locations Oversight
                     </h2>
                     <p className="text-sm text-muted-foreground">
                       See every counter in your empire from one screen. Real-time visibility into stock levels across all locations, no matter where you are.

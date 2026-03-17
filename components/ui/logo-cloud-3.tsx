@@ -21,17 +21,17 @@ export function LogoCloud({ className, logos, ...props }: LogoCloudProps) {
     logos.length >= minimumLogos || logos.length === 0
       ? logos
       : Array.from(
-          { length: Math.ceil(minimumLogos / logos.length) },
-          () => logos
-        )
-          .flat()
-          .slice(0, minimumLogos);
+        { length: Math.ceil(minimumLogos / logos.length) },
+        () => logos
+      )
+        .flat()
+        .slice(0, minimumLogos);
 
   return (
     <div
       {...props}
       className={cn(
-        "overflow-hidden py-4 [mask-image:linear-gradient(to_right,transparent,black,transparent)]",
+        "w-full overflow-hidden py-4 [mask-image:linear-gradient(to_right,transparent_0%,black_12%,black_88%,transparent_100%)]",
         className
       )}
     >

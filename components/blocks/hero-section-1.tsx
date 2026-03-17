@@ -193,7 +193,7 @@ export function HeroSection() {
         <section className="bg-background pb-16 pt-16 md:pb-32">
           <div className="relative mx-auto max-w-3xl px-6">
             <h2 className="mb-5 text-center font-medium text-foreground text-xl tracking-tight md:text-3xl">
-              <span className="text-muted-foreground">Trusted by leaders.</span>
+              <span className="">Trusted by leaders.</span>
             </h2>
             <div className="mx-auto my-5 h-px max-w-sm bg-border [mask-image:linear-gradient(to_right,transparent,black,transparent)]" />
 
