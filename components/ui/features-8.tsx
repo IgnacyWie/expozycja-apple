@@ -152,9 +152,6 @@ export function Features() {
             <Card className="relative col-span-full overflow-hidden lg:col-span-3">
               <CardContent className="grid h-full pt-6 sm:grid-cols-2">
                 <div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6">
-                  <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
-                    <Users className="m-auto size-6 text-zinc-400" strokeWidth={1} />
-                  </div>
                   <div className="space-y-2">
                     <h2 className="text-lg font-medium transition">
                       Team Sync
