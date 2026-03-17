@@ -140,21 +140,6 @@ export function HeroSection() {
                       <span className="text-nowrap">Request a Demo</span>
                     </Button>
                   </div>
-                  <Button
-                    key={2}
-                    asChild
-                    size="lg"
-                    variant="ghost"
-                    className="h-11 rounded-xl px-5">
-                    <Link
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault()
-                      }}
-                    >
-                      <span className="text-nowrap">See the Magic!</span>
-                    </Link>
-                  </Button>
                 </AnimatedGroup>
               </div>
             </div>
