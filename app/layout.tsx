@@ -6,6 +6,27 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Exponata AI",
   description: "Modern Solutions for Customer Engagement",
+  openGraph: {
+    images: [
+      {
+        url: "/phone-capture.png",
+        width: 1200,
+        height: 630,
+        alt: "Phone capture",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [
+      {
+        url: "/phone-capture.png",
+        width: 1200,
+        height: 630,
+        alt: "Phone capture",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
