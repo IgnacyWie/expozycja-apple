@@ -178,7 +178,7 @@ export function HeroSection() {
             </h2>
             <div className="mx-auto my-5 h-px max-w-sm bg-border [mask-image:linear-gradient(to_right,transparent,black,transparent)]" />
 
-            <LogoCloud logos={logos} />
+            {/*<LogoCloud logos={logos} />*/}
 
             <div className="mt-5 h-px bg-border [mask-image:linear-gradient(to_right,transparent,black,transparent)]" />
           </div>
